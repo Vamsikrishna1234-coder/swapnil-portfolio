@@ -5,25 +5,54 @@ import {
   Mail,
   MapPin,
   Send,
-  Camera,
-  MessageCircle,
-  Globe,
 } from "lucide-react";
+
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaFacebookF,
+  FaBehance,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 export default function Contact() {
   const socials = [
-    { icon: <Camera size={20} />, name: "Instagram" },
-    { icon: <Globe size={20} />, name: "LinkedIn" },
-    { icon: <MessageCircle size={20} />, name: "WhatsApp" },
+    {
+      icon: <FaInstagram size={18} />,
+      name: "Instagram",
+      link: "https://www.instagram.com/_mr_swapnil_1804?utm_source=qr&igsh=MXcyOTY2bHl2a2VzcA%3D%3D",
+    },
+    {
+      icon: <FaLinkedinIn size={18} />,
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/swapnil-jakkan-9a092b161/",
+    },
+    {
+      icon: <FaFacebookF size={18} />,
+      name: "Facebook",
+      link: "https://www.facebook.com/share/1RUQGgZtRi/",
+    },
+    {
+      icon: <FaBehance size={18} />,
+      name: "Behance",
+      link: "https://www.behance.net/sunnysunny9",
+    },
+    {
+      icon: <FaWhatsapp size={18} />,
+      name: "WhatsApp",
+      link: "https://wa.me/918919163630",
+    },
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#070b14] text-white px-6 md:px-10 py-24 scroll-smooth" id="contact">
+    <section
+      className="relative overflow-hidden bg-[#070b14] text-white px-6 md:px-10 py-24"
+      id="contact"
+    >
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute -top-10 -left-10 w-96 h-96 bg-cyan-400/10 blur-[140px] rounded-full" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-fuchsia-500/10 blur-[140px] rounded-full" />
-        <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:18px_18px]" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 blur-[140px] rounded-full" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
@@ -32,14 +61,13 @@ export default function Contact() {
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
           className="text-center"
         >
           <div className="inline-flex px-4 py-2 rounded-full bg-white/10 border border-white/10 text-xs uppercase tracking-[0.25em]">
             Contact Me
           </div>
 
-          <h2 className="mt-6 text-4xl sm:text-5xl md:text-5xl font-bold">
+          <h2 className="mt-6 text-4xl sm:text-5xl font-bold">
             Let's Build Something{" "}
             <span className="text-cyan-300">Creative</span>
           </h2>
@@ -57,7 +85,6 @@ export default function Contact() {
             initial={{ opacity: 0, x: -35 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
             className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8"
           >
             <h3 className="text-2xl font-semibold mb-8">
@@ -96,31 +123,32 @@ export default function Contact() {
                 <div>
                   <p className="text-white/50 text-sm">Location</p>
                   <p className="text-lg font-medium">
-                    Manikonda, Hyderabad,
-                    <br />
-                    Telangana – 500008
+                    Hyderabad, Telangana
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Social */}
+            {/* Follow Me */}
             <div className="mt-10 pt-8 border-t border-white/10">
               <p className="text-white/55 mb-5">Follow Me</p>
 
               <div className="flex flex-wrap gap-4">
                 {socials.map((item, i) => (
-                  <motion.button
+                  <motion.a
                     key={i}
-                    whileHover={{ y: -4, scale: 1.05 }}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ y: -5, scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3"
+                    className="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3 hover:border-cyan-300/40 hover:bg-cyan-400/10 transition"
                   >
                     <span className="text-cyan-300">
                       {item.icon}
                     </span>
                     {item.name}
-                  </motion.button>
+                  </motion.a>
                 ))}
               </div>
             </div>
@@ -131,7 +159,6 @@ export default function Contact() {
             initial={{ opacity: 0, x: 35 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
             className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8"
           >
             <h3 className="text-2xl font-semibold mb-8">
@@ -180,9 +207,11 @@ export default function Contact() {
           </motion.div>
         </div>
       </div>
-       <div className="mt-10 pt-6 border-t border-white/10 text-center text-sm text-white/45">
-          © 2026 Swapnil Jakkan. All Rights Reserved.
-        </div>
+
+      {/* Footer */}
+      <div className="mt-10 pt-6 border-t border-white/10 text-center text-sm text-white/45">
+        © 2026 Swapnil Jakkan. All Rights Reserved.
+      </div>
     </section>
   );
 }

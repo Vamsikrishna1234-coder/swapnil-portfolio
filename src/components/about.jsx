@@ -10,25 +10,25 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import aeIcon from "../assets/ae icon.png";
-import psIcon from "../assets/ps icon.png";
-import aiIcon from "../assets/ai icon.png";
-import lrIcon from "../assets/lr icon.png";
-import prIcon from "../assets/pr icon.png";
-import figmaIcon from "../assets/figma icon.png";
+import aeIcon from "../assets/after-effects.png";
+import psIcon from "../assets/adobe-photoshop.png";
+import aiIcon from "../assets/adobe-illustrator.png";
+import lrIcon from "../assets/lightroom.png";
+import prIcon from "../assets/premier pro.png";
+import figmaIcon from "../assets/figma.png";
 import corelIcon from "../assets/corel-draw-logo.png";
-import idIcon from "../assets/id icon.png";
+import idIcon from "../assets/indesign icon.png";
 
 export default function About() {
   const skills = [
-    { name: "AE", icon: aeIcon },
-    { name: "PS", icon: psIcon },
-    { name: "AI", icon: aiIcon },
-    { name: "LR", icon: lrIcon },
-    { name: "PR", icon: prIcon },
+    { name: "Adobe After Effects", icon: aeIcon },
+    { name: "Adobe Photoshop", icon: psIcon },
+    { name: "Adobe Illustrator", icon: aiIcon },
+    { name: "Adobe LightRoom", icon: lrIcon },
+    { name: "Adobe Premiere Pro", icon: prIcon },
     { name: "Figma", icon: figmaIcon },
-    { name: "Corel", icon: corelIcon },
-    { name: "ID", icon: idIcon },
+    { name: "Coreldraw", icon: corelIcon },
+    { name: "InDesign", icon: idIcon },
   ];
 
   const creativeFields = [
@@ -95,7 +95,7 @@ export default function About() {
             y: [0, -40, 0],
           }}
           transition={{ repeat: Infinity, duration: 16 }}
-          className="absolute bottom-0 right-0 w-[430px] h-[430px] rounded-full bg-fuchsia-500/20 blur-[140px]"
+          className="absolute bottom-0 right-0 w-[430px] h-[430px] rounded-full bg-purple-500/20 blur-[140px]"
         />
 
         <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:18px_18px]" />
@@ -206,7 +206,7 @@ export default function About() {
                       rotate: -3,
                       y: -8,
                     }}
-                    className="group rounded-2xl bg-cyan-400/10 border border-cyan-400/20 p-4 text-center transition-all duration-500 hover:bg-gradient-to-br hover:from-cyan-400/20 hover:to-fuchsia-500/10 hover:border-cyan-300/40 hover:shadow-[0_18px_30px_rgba(34,211,238,0.18)]"
+                    className="group rounded-2xl bg-cyan-400/10 border border-cyan-400/20 p-4 text-center transition-all duration-500 hover:bg-gradient-to-br hover:from-cyan-400/20 hover:to-purple-500/10 hover:border-cyan-300/40 hover:shadow-[0_18px_30px_rgba(34,211,238,0.18)]"
                   >
                     <img
                       src={skill.icon}
@@ -248,45 +248,7 @@ export default function About() {
                 </div>
               </div>
 
-              {/* Contact */}
-              <div className="border-t border-white/10 pt-8 mt-8">
-                <h4 className="text-xl font-semibold mb-5">
-                  Contact
-                </h4>
-
-                <div className="space-y-4 text-white/75">
-                  {[
-                    {
-                      icon: Phone,
-                      text: "+91 8919 163 630",
-                    },
-                    {
-                      icon: Mail,
-                      text: "swapnil.jakkan@gmail.com",
-                    },
-                    {
-                      icon: MapPin,
-                      text:
-                        "Manikonda, Hyderabad, Telangana – 500008",
-                    },
-                  ].map((item, i) => (
-                    <motion.div
-                      key={i}
-                      whileHover={{
-                        x: 8,
-                        scale: 1.02,
-                      }}
-                      className="flex items-center gap-3 group transition-all duration-300"
-                    >
-                      <item.icon
-                        size={18}
-                        className="text-cyan-300"
-                      />
-                      <span>{item.text}</span>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
+              
             </motion.div>
           </div>
 
@@ -323,7 +285,7 @@ export default function About() {
                       x: 10,
                       scale: 1.02,
                     }}
-                    className="border-l-2 border-cyan-400/40 pl-4 transition-all duration-300 hover:border-fuchsia-400 group"
+                    className="border-l-2 border-cyan-400/40 pl-4 transition-all duration-300 hover:border-purple-400 group"
                   >
                     <p className="text-cyan-300 text-sm">
                       {item.year}
@@ -370,7 +332,7 @@ export default function About() {
                       y: -5,
                       scale: 1.04,
                     }}
-                    className="rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white/80 transition-all duration-400 hover:bg-gradient-to-r hover:from-cyan-400/10 hover:to-fuchsia-500/10 hover:border-cyan-300/30 hover:text-white hover:shadow-[0_15px_25px_rgba(217,70,239,0.12)]"
+                    className="rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white/80 transition-all duration-400 hover:bg-gradient-to-r hover:from-cyan-400/10 hover:to-purple-500/10 hover:border-cyan-300/30 hover:text-white hover:shadow-[0_15px_25px_rgba(217,70,239,0.12)]"
                   >
                     {field}
                   </motion.div>

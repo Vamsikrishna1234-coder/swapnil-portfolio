@@ -113,7 +113,7 @@ export default function WorksSection() {
       {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-400/10 blur-[140px] rounded-full" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-fuchsia-500/10 blur-[140px] rounded-full" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 blur-[140px] rounded-full" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">

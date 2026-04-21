@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import Resume from './components/resume'
 import Navbar from './components/header'
 import About from './components/about'
 import Works from './components/works'
@@ -14,7 +15,10 @@ function App() {
   return (
     <>
       
+
       <Navbar />
+
+      <Resume />
 
       <About />
 
