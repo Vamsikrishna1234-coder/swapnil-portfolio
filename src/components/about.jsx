@@ -10,35 +10,37 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import aeIcon from "../assets/after-effects.png";
-import psIcon from "../assets/adobe-photoshop.png";
-import aiIcon from "../assets/adobe-illustrator.png";
-import lrIcon from "../assets/lightroom.png";
-import prIcon from "../assets/premier pro.png";
-import figmaIcon from "../assets/figma.png";
-import corelIcon from "../assets/corel-draw-logo.png";
-import idIcon from "../assets/indesign icon.png";
+import aeIcon from "../assets/software Icon_Ae.svg";
+import aiIcon from "../assets/software Icon_Ai.svg";
+import corelIcon from "../assets/software Icon_CDR.svg";
+import figmaIcon from "../assets/software Icon_Figma.svg";
+import idIcon from "../assets/software Icon_Id.svg";
+import lrIcon from "../assets/software Icon_Lr.svg";
+import prIcon from "../assets/software Icon_Pr.svg";
+import psIcon from "../assets/software Icon_PS.svg";
+
 
 export default function About() {
   const skills = [
     { name: "Adobe After Effects", icon: aeIcon },
-    { name: "Adobe Photoshop", icon: psIcon },
     { name: "Adobe Illustrator", icon: aiIcon },
+    { name: "Coreldraw", icon: corelIcon },
+    { name: "Figma", icon: figmaIcon },
+    { name: "InDesign", icon: idIcon },
     { name: "Adobe LightRoom", icon: lrIcon },
     { name: "Adobe Premiere Pro", icon: prIcon },
-    { name: "Figma", icon: figmaIcon },
-    { name: "Coreldraw", icon: corelIcon },
-    { name: "InDesign", icon: idIcon },
+    { name: "Adobe Photoshop", icon: psIcon },
+    
   ];
 
   const creativeFields = [
     "Logos & Branding",
-    "Advertisements",
-    "Websites & Apps",
-    "Brochures & Magazines",
     "Packaging",
+    "Advertisements (Print & Digital)",
     "Social Media Graphics",
-    "Book Covers",
+    "Websites & Apps",
+    "Book Covers & Layouts",
+    "Brochures & Magazines",
     "Posters & Flyers",
   ];
 
@@ -74,7 +76,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative min-h-screen overflow-hidden bg-[#070b14] text-white px-6 md:px-10 py-24"
+      className="relative min-h-screen overflow-hidden bg-[#070b14] text-white px-6 md:px-10 py-28"
     >
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">

@@ -13,11 +13,11 @@ import {
    Replace paths with your files
 ================================= */
 
-import draw1 from "../assets/swapnil portfolio.jpg"; 
-import draw2 from "../assets/swapnil portfolio.jpg"; 
-import draw3 from "../assets/swapnil portfolio.jpg";
-import draw4 from "../assets/swapnil portfolio.jpg";
-import draw5 from "../assets/swapnil portfolio.jpg";
+import draw1 from "../assets/Portfolio4.jpg"; 
+import draw2 from "../assets/Portfolio13.jpg"; 
+import draw3 from "../assets/Portfolio4.jpg";
+import draw4 from "../assets/Portfolio13.jpg";
+import draw5 from "../assets/Portfolio4.jpg";
 
 import ill1 from "../assets/swapnil portfolio.jpg";
 import ill2 from "../assets/swapnil portfolio.jpg";
@@ -109,7 +109,7 @@ export default function WorksSection() {
   };
 
   return (
-    <section id="works" className="relative bg-[#070b14] text-white px-6 md:px-10 py-24 overflow-hidden">
+    <section id="works" className="relative bg-[#070b14] text-white px-6 md:px-10 py-28 overflow-hidden">
       {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-400/10 blur-[140px] rounded-full" />
@@ -119,7 +119,7 @@ export default function WorksSection() {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center">
-          <div className="inline-flex px-4 py-2 rounded-full bg-white/10 border border-white/10 text-xs uppercase tracking-[0.25em]">
+          <div className="inline-flex px-4 py-2 rounded-full bg-white/10 border border-white/10 text-xs uppercase tracking-[0.25em] hover:bg-cyan-400 hover:text-black hover:scale-105">
             My Works
           </div>
 

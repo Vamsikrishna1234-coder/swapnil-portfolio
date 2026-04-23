@@ -46,7 +46,7 @@ export default function Contact() {
 
   return (
     <section
-      className="relative overflow-hidden bg-[#070b14] text-white px-6 md:px-10 py-24"
+      className="relative overflow-hidden bg-[#070b14] text-white px-6 md:px-10 py-28"
       id="contact"
     >
       {/* Background */}
@@ -63,7 +63,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <div className="inline-flex px-4 py-2 rounded-full bg-white/10 border border-white/10 text-xs uppercase tracking-[0.25em]">
+          <div className="inline-flex px-4 py-2 rounded-full bg-white/10 border border-white/10 text-xs uppercase tracking-[0.25em] hover:bg-cyan-400 hover:text-black hover:scale-105">
             Contact Me
           </div>
 

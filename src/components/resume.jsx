@@ -12,7 +12,7 @@ export default function ResumeFloat() {
       animate={{ x: 0, opacity: 1 }}
       transition={{ delay: 1 }}
       whileHover={{ x: 6, scale: 1.05 }}
-      className="fixed left-0 bottom-8 z-50 group"
+      className="fixed right-0 bottom-8 z-50 group"
     >
       <div className="flex flex-col items-center justify-center gap-3 bg-cyan-400 text-black px-3 py-5 rounded-r-2xl shadow-2xl font-semibold min-w-[30px]">
         
@@ -29,7 +29,7 @@ export default function ResumeFloat() {
           className="text-[11px] tracking-[0.25em] font-bold uppercase"
           style={{
             writingMode: "vertical-rl",
-            transform: "rotate(180deg)",
+            transform: "rotate(360deg)",
           }}
         >
           Resume
