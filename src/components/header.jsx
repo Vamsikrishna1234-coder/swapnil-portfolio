@@ -1,39 +1,3 @@
-{/* <header className="fixed top-0 left-0 w-full z-50 px-6 md:px-10 py-6">
-        <div className="max-w-7xl mx-auto flex items-center justify-between rounded-full border border-purple-200 bg-white shadow-lg px-6 py-4">
-          <img
-              src={logo}   // import your logo image
-              alt="Swapnil Jakkan Logo"
-              className="w-10 h-10 md:w-80 md:h-12 object-contain rounded-full shadow-md"
-            />
-
-          <nav className="hidden md:flex gap-8">
-            {navItems.map((item, i) => (
-              <motion.a
-                key={i}
-                href={item.link}
-                whileHover={{ y: -3 }}
-                className="relative text-sm font-medium text-purple-600 hover:text-purple-600 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all"
-              >
-                {item.name}
-              </motion.a>
-            ))}
-          </nav>
-
-          <button
-            onClick={() => setMenuOpen(true)}
-            className="md:hidden flex flex-col gap-1"
-          >
-            <span className="w-6 h-[2px] bg-cyan-600"></span>
-            <span className="w-4 h-[2px] bg-cyan-600 ml-auto"></span>
-          </button>
-        </div>
-      </header> */}
-
-
-
-
-
-
 import React, { useState } from "react";
 import {
   motion,
@@ -90,26 +54,30 @@ export default function HeroSection() {
 
       {/* Navbar */}
       
+{/* Navbar */}
 <header className="fixed top-0 left-0 w-full z-50 px-4 md:px-10 py-4 md:py-6">
-  <div className="max-w-7xl mx-auto flex items-center justify-between rounded-full border border-purple-200 bg-white shadow-lg px-4 md:px-6 py-3 md:py-4">
+  <div className="max-w-7xl mx-auto flex items-center justify-between rounded-full border border-white/20 bg-white/0 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.25)] px-4 md:px-6 py-3 md:py-4">
+
+    {/* Glass Shine Effect */}
+    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/0 via-white/0 to-transparent pointer-events-none"></div>
 
     {/* Perfect Responsive Logo */}
-    <div className="flex items-center">
+    <div className="flex items-center relative z-10">
       <img
         src={logo}
         alt="Swapnil Jakkan Logo"
-        className="h-10 w-auto sm:h-12 md:h-12 lg:h-14 object-contain transition-all duration-300"
+        className="h-10 w-auto sm:h-12 md:h-12 lg:h-14 object-contain transition-all duration-300 drop-shadow-md"
       />
     </div>
 
     {/* Desktop Nav */}
-    <nav className="hidden md:flex gap-8">
+    <nav className="hidden md:flex gap-8 relative z-10">
       {navItems.map((item, i) => (
         <motion.a
           key={i}
           href={item.link}
           whileHover={{ y: -3 }}
-          className="relative text-sm font-medium text-purple-600 hover:text-purple-600 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all"
+          className="relative text-sm font-medium text-white hover:text-cyan-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-300 hover:after:w-full after:transition-all"
         >
           {item.name}
         </motion.a>
@@ -119,11 +87,12 @@ export default function HeroSection() {
     {/* Mobile Menu Button */}
     <button
       onClick={() => setMenuOpen(true)}
-      className="md:hidden flex flex-col gap-1"
+      className="md:hidden flex flex-col gap-1 relative z-10"
     >
-      <span className="w-6 h-[2px] bg-cyan-600"></span>
-      <span className="w-4 h-[2px] bg-cyan-600 ml-auto"></span>
+      <span className="w-6 h-[2px] bg-white"></span>
+      <span className="w-4 h-[2px] bg-white ml-auto"></span>
     </button>
+
   </div>
 </header>
 
@@ -210,7 +179,7 @@ export default function HeroSection() {
                 href="#works"
                 className="px-8 py-4 rounded-full bg-cyan-400 text-black font-semibold hover:scale-105 transition"
               >
-                View Works →
+                View My Works →
               </a>
 
               <a

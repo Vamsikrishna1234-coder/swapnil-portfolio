@@ -73,8 +73,8 @@ export default function Contact() {
           </h2>
 
           <p className="mt-5 max-w-2xl mx-auto text-white/65 text-lg">
-            Need branding, motion graphics, packaging, UI/UX or creative
-            campaigns? Let's connect and turn your ideas into impactful visuals.
+              Have a project in mind or looking for a designer to collaborate with?
+              I’d love to hear from you.
           </p>
         </motion.div>
 

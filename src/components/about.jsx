@@ -10,27 +10,27 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import aeIcon from "../assets/software Icon_Ae.svg";
-import aiIcon from "../assets/software Icon_Ai.svg";
-import corelIcon from "../assets/software Icon_CDR.svg";
-import figmaIcon from "../assets/software Icon_Figma.svg";
 import idIcon from "../assets/software Icon_Id.svg";
-import lrIcon from "../assets/software Icon_Lr.svg";
-import prIcon from "../assets/software Icon_Pr.svg";
 import psIcon from "../assets/software Icon_PS.svg";
+import aiIcon from "../assets/software Icon_Ai.svg";
+import aeIcon from "../assets/software Icon_Ae.svg";
+import prIcon from "../assets/software Icon_Pr.svg";
+import lrIcon from "../assets/software Icon_Lr.svg";
+import figmaIcon from "../assets/software Icon_Figma.svg";
+import corelIcon from "../assets/software Icon_CDR.svg";
+
 
 
 export default function About() {
   const skills = [
-    { name: "Adobe After Effects", icon: aeIcon },
-    { name: "Adobe Illustrator", icon: aiIcon },
-    { name: "Coreldraw", icon: corelIcon },
-    { name: "Figma", icon: figmaIcon },
     { name: "InDesign", icon: idIcon },
-    { name: "Adobe LightRoom", icon: lrIcon },
-    { name: "Adobe Premiere Pro", icon: prIcon },
-    { name: "Adobe Photoshop", icon: psIcon },
-    
+    { name: " Photoshop", icon: psIcon },
+    { name: " Illustrator", icon: aiIcon },
+    { name: " After Effects", icon: aeIcon },
+    { name: " Premiere Pro", icon: prIcon },
+    { name: " LightRoom", icon: lrIcon },
+    { name: "Figma", icon: figmaIcon },
+    { name: "Coreldraw", icon: corelIcon },
   ];
 
   const creativeFields = [
@@ -186,6 +186,7 @@ export default function About() {
             </motion.div>
 
             {/* Skills + Languages + Contact */}
+            
             <motion.div
               initial={{ opacity: 0, x: -35 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -198,9 +199,15 @@ export default function About() {
               }}
               className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 flex-1 transition-all duration-500 hover:border-cyan-400/40 hover:bg-white/10"
             >
+              <div className="flex items-center gap-3 mb-6">
+                <Sparkles className="text-cyan-300" size={20} />
+                <h4 className="text-xl font-semibold">Design Skills</h4>
+              </div>
+
               {/* Skills */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
                 {skills.map((skill, i) => (
+                  
                   <motion.div
                     key={i}
                     whileHover={{
@@ -210,6 +217,7 @@ export default function About() {
                     }}
                     className="group rounded-2xl bg-cyan-400/10 border border-cyan-400/20 p-4 text-center transition-all duration-500 hover:bg-gradient-to-br hover:from-cyan-400/20 hover:to-purple-500/10 hover:border-cyan-300/40 hover:shadow-[0_18px_30px_rgba(34,211,238,0.18)]"
                   >
+                  
                     <img
                       src={skill.icon}
                       alt={skill.name}
@@ -347,3 +355,6 @@ export default function About() {
     </section>
   );
 }
+
+
+
