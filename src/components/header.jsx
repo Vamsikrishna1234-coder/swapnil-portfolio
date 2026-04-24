@@ -186,7 +186,7 @@ export default function HeroSection() {
                 href="#contact"
                 className="px-8 py-4 rounded-full bg-white text-cyan-600 font-semibold hover:bg-blue-50 transition"
               >
-                Hire Me
+                Let's Work Together
               </a>
             </motion.div>
           </motion.div>
