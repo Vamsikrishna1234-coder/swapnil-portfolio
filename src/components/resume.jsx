@@ -14,7 +14,7 @@ export default function ResumeFloat() {
       whileHover={{ x: 6, scale: 1.05 }}
       className="fixed right-6 bottom-8 z-50 group"
     >
-      <div className="relative overflow-hidden flex flex-col items-center justify-center gap-3 px-2 py-5 rounded-r-2xl min-w-[32px] border border-white/20 bg-white/10 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.25)]">
+      <div className="relative overflow-hidden flex flex-col items-center justify-center gap-3 px-2 py-5 rounded-xl min-w-[32px] border border-white/20 bg-white/10 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.25)]">
 
         {/* Glass Shine */}
         <motion.div
@@ -27,14 +27,14 @@ export default function ResumeFloat() {
         <motion.div
           animate={{ opacity: [0.3, 0.7, 0.3], scale: [1, 1.08, 1] }}
           transition={{ repeat: Infinity, duration: 2 }}
-          className="absolute inset-0 bg-cyan-400/10"
+          className="absolute inset-0 bg-purple-400/10"
         />
 
         {/* Icon */}
         <motion.div
           animate={{ y: [0, -4, 0] }}
           transition={{ repeat: Infinity, duration: 1 }}
-          className="relative z-10 text-cyan-300"
+          className="relative z-10 text-purple-300"
         >
           <Download size={20} />
         </motion.div>

@@ -8,6 +8,8 @@ import {
   MapPin,
   Languages,
   Sparkles,
+  Pen,
+  Brush,
 } from "lucide-react";
 
 import idIcon from "../assets/software Icon_Id.svg";
@@ -200,7 +202,7 @@ export default function About() {
               className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 flex-1 transition-all duration-500 hover:border-cyan-400/40 hover:bg-white/10"
             >
               <div className="flex items-center gap-3 mb-6">
-                <Sparkles className="text-cyan-300" size={20} />
+                <Brush className="text-cyan-300" size={20} />
                 <h4 className="text-xl font-semibold">Design Skills</h4>
               </div>
 

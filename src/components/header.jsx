@@ -5,7 +5,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import logo from "../assets/swapnil logo.png";   
+import logo from "../assets/Logo-04.png";   
 import heroImg from "../assets/swapnil portfolio.jpg";
 
 const navItems = [
