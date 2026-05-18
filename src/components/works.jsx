@@ -761,12 +761,12 @@ import {
    BRANDING
 ========================================= */
 
-import brandThumb1 from "../assets/branding/thumbs/thumb1.jpeg";
-import brandThumb2 from "../assets/branding/thumbs/thumb1.jpeg";
-import brandThumb3 from "../assets/branding/thumbs/thumb1.jpeg";
-import brandThumb4 from "../assets/branding/thumbs/thumb1.jpeg";
-import brandThumb5 from "../assets/branding/thumbs/thumb1.jpeg";
-import brandThumb6 from "../assets/branding/thumbs/thumb1.jpeg";
+import brandThumb1 from "../assets/branding/thumbs/bhagyathumb.jpeg";
+import brandThumb2 from "../assets/branding/thumbs/Ramadevi.jpeg";
+import brandThumb3 from "../assets/branding/thumbs/srk.jpeg";
+import brandThumb4 from "../assets/branding/thumbs/anumah.jpeg";
+import brandThumb5 from "../assets/branding/thumbs/HKgastro.jpeg";
+import brandThumb6 from "../assets/branding/thumbs/INIburger.jpeg";
 
 import brandPdf1 from "../assets/branding/brand1.pdf";
 import brandPdf2 from "../assets/branding/brand2.pdf";
@@ -780,13 +780,13 @@ import brand6 from "../assets/branding/brand6.jpg";
    PACKAGE DESIGN
 ========================================= */
 
-import packThumb1 from "../assets/package/thumbs/thumb1.jpeg";
-import packThumb2 from "../assets/package/thumbs/thumb1.jpeg";
+import packThumb1 from "../assets/package/thumbs/Fusionthumb.jpeg";
+import packThumb2 from "../assets/package/thumbs/Mobile copy.jpeg";
 import packThumb3 from "../assets/package/thumbs/Butterflow.png";
-import packThumb4 from "../assets/package/thumbs/thumb1.jpeg";
+import packThumb4 from "../assets/package/pack4.jpg";
 
 import packPdf1 from "../assets/package/pack1.pdf";
-import packPdf2 from "../assets/package/pack2.pdf";
+import packPdf2 from "../assets/package/mobpackage.pdf";
 
 import pack3 from "../assets/package/pack3.jpg";
 import pack4 from "../assets/package/pack4.jpg";
