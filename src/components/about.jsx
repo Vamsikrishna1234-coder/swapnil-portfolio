@@ -102,7 +102,7 @@ export default function About() {
           className="absolute bottom-0 right-0 w-[430px] h-[430px] rounded-full bg-purple-500/20 blur-[140px]"
         />
 
-        <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:18px_18px]" />
+        {/* <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:18px_18px]" /> */}
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">

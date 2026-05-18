@@ -154,28 +154,6 @@ export default function WorksSection() {
       },
     ],
 
-    "Package Design": [
-      {
-        type: "pdf",
-        thumbnail: packThumb1,
-        file: packPdf1,
-      },
-
-      {
-        type: "pdf",
-        thumbnail: packThumb2,
-        file: packPdf2,
-      },
-
-      {
-        type: "image",
-        thumbnail: packThumb3,
-        file: pack3,
-      },
-
-      
-    ],
-
     Brochure: [
       {
         type: "pdf",
@@ -307,6 +285,27 @@ export default function WorksSection() {
         thumbnail: projThumb4,
         file: projPdf4,
       },
+    ],
+    "Package Design": [
+      {
+        type: "pdf",
+        thumbnail: packThumb1,
+        file: packPdf1,
+      },
+
+      {
+        type: "pdf",
+        thumbnail: packThumb2,
+        file: packPdf2,
+      },
+
+      {
+        type: "image",
+        thumbnail: packThumb3,
+        file: pack3,
+      },
+
+      
     ],
   };
 
@@ -600,7 +599,7 @@ export default function WorksSection() {
                     alt="thumbnail"
                     className="
                       w-full
-                      h-[320px]
+                      h-[250px]
                       object-cover
                       group-hover:scale-110
                       transition
